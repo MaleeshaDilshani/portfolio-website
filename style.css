@@ -203,7 +203,7 @@ body.dark .project-card {
     position: absolute;
     top: 100%;
     left: 0;
-    padding: 10px 0;
+    padding: 10px 0; 
     z-index: 99;
   }
 
