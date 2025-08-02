@@ -24,5 +24,18 @@ window.addEventListener("DOMContentLoaded", () => {
   if (savedTheme === "dark") {
     document.body.classList.add("dark");
     themeToggle.textContent = "☀️";
-  }
+  } 
+  // 📧 EmailJS contact form logic
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_5sllpd8", "template_oiele64", this)
+    .then(() => {
+      document.getElementById("form-message").textContent = "Thank you! Your message has been sent.";
+      this.reset();
+    }, (error) => {
+      document.getElementById("form-message").textContent = "Oops! Something went wrong.";
+      console.error("EmailJS Error:", error);
+    });
+});
 });
