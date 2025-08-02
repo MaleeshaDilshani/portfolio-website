@@ -6,11 +6,11 @@ menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
-document.getElementById("contact-form").addEventListener("submit", function (e) {
-  e.preventDefault();
-  document.getElementById("form-message").textContent = "Thank you! Your message has been sent.";
-  this.reset();
-});
+//document.getElementById("contact-form").addEventListener("submit", function (e) {
+ // e.preventDefault();
+  //document.getElementById("form-message").textContent = "Thank you! Your message has been sent.";
+  //this.reset();
+//});
 
 const themeToggle = document.getElementById("theme-toggle");
 themeToggle.addEventListener("click", () => {
