@@ -29,7 +29,7 @@ window.addEventListener("DOMContentLoaded", () => {
 document.getElementById("contact-form").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  emailjs.sendForm("service_5sllpd8", "template_oiele64", this)
+  emailjs.sendForm("service_p6mcrkj", "template_lkjbics", this)
     .then(() => {
       document.getElementById("form-message").textContent = "Thank you! Your message has been sent.";
       this.reset();
